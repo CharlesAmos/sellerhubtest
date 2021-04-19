@@ -1,4 +1,4 @@
-@import "../../../theme/mixins/mixins";
+@import '../../../theme/mixins/mixins';
 
 $pageSize: 15rem;
 .router_active {
@@ -37,6 +37,7 @@ $pageSize: 15rem;
   border-radius: 8px;
   h6 {
     font-size: 24px;
+    @include responsive(font-size, 18px, tablet);
   }
   mat-icon {
     display: none;
@@ -50,7 +51,7 @@ $pageSize: 15rem;
   @include absolute_position(0, 0, 0, 0);
   z-index: 11;
   background: rgba(0, 0, 0, 0.4) !important;
-  content: "";
+  content: '';
 }
 .sidebar {
   position: fixed;
@@ -118,7 +119,7 @@ $pageSize: 15rem;
   min-height: 100vh;
   padding: 0 32px 2rem 292px;
   @include device(ipad) {
-    padding: 112px 11px 2rem 11px;
+    padding: 0 11px 2rem 11px;
   }
   @include resizeAnimation(padding);
   .outlet {
@@ -138,7 +139,7 @@ $pageSize: 15rem;
   display: none;
 }
 .add-icon {
-  background: #FF5700;
+  background: #ff5700;
   border-radius: 50%;
   @include flex_y_center;
   @include image_size(1.5rem, 1.5rem);

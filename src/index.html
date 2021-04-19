@@ -1,24 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Seller Hub</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/css-aos.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>HubTest</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      .body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      ::selection {
+        background-color: #006330;
+        color: #fff;
+      }
+      .body {
+        right: 0;
+        position: fixed;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        bottom: 0;
+      }
+      .Box {
+        position: relative;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 150px;
+        color: #006330;
+        font-size: 12px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+      }
+      .Box:before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 3px solid transparent;
+        border-top: 3px solid #006330;
+        border-right: 3px solid #006330;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        animation: SpanLoading 2s linear infinite;
+      }
+      .Box span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 3px;
+        background-color: transparent;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transform: rotate(42deg);
+        animation: Loading 2s linear infinite;
+      }
+      .Box img {
+        width: 7rem;
+      }
+      .Box span:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #006330;
+        right: -7px;
+        bottom: -7px;
+        box-shadow: 0px 0px 10px #006330;
+      }
 
-<body>
+      @keyframes Loading {
+        0% {
+          transform: rotate(42deg);
+        }
+        100% {
+          transform: rotate(402deg);
+        }
+      }
+
+      @keyframes SpanLoading {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="body" id="appLoader">
+      <div class="Box">
+        <img src="./favicon.svg" alt="" />
+        <span></span>
+      </div>
+    </div>
     <app-root></app-root>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-</body>
-
+    <script src="./assets/js/7276-js-aos.js"></script>
+    <script src="./assets/js/4074-js-custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

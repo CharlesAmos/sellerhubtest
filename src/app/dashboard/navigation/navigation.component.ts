@@ -15,7 +15,7 @@ export class NavigationComponent implements OnInit {
   user: any;
   name = '';
   menu = [
-    { path: '', icon: '../../../assets/icons/icon - home.svg', title: 'Dashboard' },
+    { path: 'overview', icon: '../../../assets/icons/icon - home.svg', title: 'Dashboard' },
     { path: 'product', icon: '../../../assets/icons/icon - products (2).svg', title: 'Add Product' },
     { path: 'order', icon: '../../../assets/icons/icon - order.svg', title: 'Order' },
     { path: 'messages', icon: '../../../assets/icons/icon - message (1).svg', title: 'Messages' },

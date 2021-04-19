@@ -1,4 +1,4 @@
-@import "../../../theme/mixins/mixins";
+@import '../../../theme/mixins/mixins';
 .cards {
   display: flex;
   @include responsive(flex-wrap, wrap, ipad);
@@ -13,8 +13,12 @@
     display: flex;
     align-items: center;
     @include responsive(width, 47%, ipad);
+    @include responsive(padding, 24px 26px, ipad);
     img {
       @include image_size(64px, 64px);
+      @include device(ipad) {
+        @include image_size(34px, 34px);
+      }
       margin-right: 0.8rem;
     }
     h6 {
@@ -127,7 +131,7 @@
         position: absolute;
         width: 1.7rem;
         top: 33%;
-        left:11%;
+        left: 11%;
       }
     }
     .action {
@@ -321,9 +325,9 @@ p {
   div {
     span:first-child::after {
       @include absolute_position('', 0, -3px, 0);
-     background: #FF5700;
-     content: '';
-     height: 2px;
+      background: #ff5700;
+      content: '';
+      height: 2px;
     }
   }
 }

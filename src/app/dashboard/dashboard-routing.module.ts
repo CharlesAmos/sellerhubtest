@@ -9,11 +9,11 @@ const routes: Routes = [
     component: NavigationComponent,
     data: { title: 'Dashboard | CRM' },
     children: [
-      { path: '', redirectTo: 'dashboard' },
+      { path: '', redirectTo: 'overview' },
       {
-        path: '',
+        path: 'overview',
         component: OverviewComponent,
-        data: { title: 'Dashboard | Hub test | CRM' }
+        data: { title: 'SellerHub | Dashboard ' }
       },
     ]
   }

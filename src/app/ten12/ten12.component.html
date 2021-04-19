@@ -1,215 +1,457 @@
 <div class="entire-page">
-    <div [ngClass]="{'d-none': fixNav == 'none', 'fixed_nav_bg': fixNav == 'blur'}" class="nav-ten page-pad">
-        <div class="d-flex py-12">
-            <img *ngIf="!fixNav || fixNav == 'none'" class="logo" src="../../assets/images/Sllers-hub-logo.svg" alt="" srcset="">
-            <img *ngIf=" fixNav == 'blur'" class="logo" src="../../assets/images/Sllers-hub-logo-black.svg" alt="" srcset="">
-            <div class="di-sm-none ten12Express">
-                <span class="mr-38 ">Ten12 Express</span>
-                <span class="mr-38 ">Learning center</span>
-                <button [ngClass]="{'color-black': fixNav == 'blur'}" class=" btn-reg">Register</button>
-            </div>
-            <div class="d_none_desktop ten12Express">
-                <a class="mobile-menu-toggle js-toggle-menu hamburger-menu">
-                    <span class="menu-item"></span>
-                    <span class="menu-item"></span>
-                    <span class="menu-item"></span>
-                </a>
-            </div>
-        </div>
+  <div
+    [ngClass]="{ 'd-none': fixNav == 'none', fixed_nav_bg: fixNav == 'blur' }"
+    class="nav-ten page-pad"
+  >
+    <div class="d-flex py-12">
+      <img
+        *ngIf="!fixNav || fixNav == 'none'"
+        class="logo"
+        src="../../assets/images/Sllers-hub-logo.svg"
+        alt=""
+        srcset=""
+      />
+      <img
+        *ngIf="fixNav == 'blur'"
+        class="logo"
+        src="../../assets/images/Sllers-hub-logo-black.svg"
+        alt=""
+        srcset=""
+      />
+      <div class="di-sm-none ten12Express">
+        <span class="mr-38">Ten12 Express</span>
+        <span class="mr-38">Learning center</span>
+        <button [ngClass]="{ 'color-black': fixNav == 'blur' }" class="btn-reg">
+          Register
+        </button>
+      </div>
+      <div class="d-lg-none ten12Express">
+        <a class="mobile-menu-toggle js-toggle-menu hamburger-menu">
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+        </a>
+      </div>
     </div>
-    <div class="hero-bg d-flex">
-        <div class="page-margin img-text text-white">
-            <h1 class="mw-560 page-title">
-                Join the No.1 Ecommerce Platform in Nigeria
-            </h1>
-            <p class="d_none_desktop mw-383">
-                Start making money now, it's easy and free
+  </div>
+  <div class="hero-bg d-flex">
+    <div class="page-margin img-text text-white">
+      <h1 class="mw-560 page-title" data-aos="fade-up" data-aos-delay="100">
+        Join the No.1 Ecommerce Platform in Nigeria
+      </h1>
+      <p class="mw-383" data-aos="fade-up" data-aos-delay="100">
+        Start making money now, it's easy and free
+      </p>
+      <div class="pt-80 btn_group" data-aos="fade-up" data-aos-delay="100">
+        <button class="btn-seller px-60 py-12 text-white">
+          Become a Seller
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <img
+      class="circle"
+      src="../../assets/icons/circle-artifacts.svg"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      alt=""
+    />
+    <div class="page-pad pb-128 pt-lg-128">
+      <h2
+        class="text-center pb-24 section-title"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        How it works
+      </h2>
+      <div class="works text-center ml-auto mr-auto">
+        <p
+          class="text-center font-small"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Become a member on the Ten12 platform by creating an account either
+          using your social media account or email account. Proceed to create
+          store and begin upload of store details, then await your dashboard
+          where items can be uploaded and all inventory managed.
+        </p>
+      </div>
+      <div class="row pt-48">
+        <img
+          class="ring"
+          src="../../assets/images/ring-artifacts.svg"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          alt=""
+        />
+
+        <div
+          class="tCard text-center px-52 col-md-auto mr-lg-30 mr-md-16 mb-sm-30 ml-auto mr-auto"
+        >
+          <img
+            class="card-image pt-52"
+            src="../../assets/images/become_member.svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="100"
+            srcset=""
+          />
+          <h5 class="text-center pt-32" data-aos="fade-up" data-aos-delay="100">
+            Become a member
+          </h5>
+          <p
+            class="text-center pt-14 font-small grey-text"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Sign up for free on Ten12 and register an account using an email
+            address.
+          </p>
+        </div>
+        <div
+          class="tCard text-center px-52 col-md-auto mr-lg-30 mr-md-16 mb-sm-30 ml-auto mr-auto"
+        >
+          <img
+            class="card-image pt-52"
+            src="../../assets/images/verify_acc.svg"
+            alt=""
+            srcset=""
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
+          <h5 class="text-center pt-32" data-aos="fade-up" data-aos-delay="100">
+            Upload product
+          </h5>
+          <p
+            class="text-center pt-14 font-small grey-text"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            verification link to your email address. Click on the link to
+            confirm registration.
+          </p>
+        </div>
+        <div
+          class="tCard text-center px-52 col-md-auto mb-sm-30 ml-auto mr-auto"
+        >
+          <img
+            class="card-image pt-52"
+            src="../../assets/images/start-selling.svg"
+            alt=""
+            srcset=""
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
+          <h5 class="text-center pt-32" data-aos="fade-up" data-aos-delay="100">
+            Start Selling
+          </h5>
+          <p
+            class="text-center pt-14 font-small grey-text"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Go straight to your dashboard, click on add item, follow the prompt
+            and view all products
+          </p>
+        </div>
+        <img
+          class="line di-sm-none"
+          src="../../assets/images/swirle-libe.svg"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="100"
+        />
+      </div>
+    </div>
+
+    <div class="diagonal-box">
+      <img src="./../../assets/icons/Polygon 1.svg" class="polygon" alt="" />
+      <div
+        class="diagonal-content page-margin pt-128 text-center why-choose ml-auto mr-auto"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <h5 class="text-center section-title">Why choose Ten12</h5>
+        <p class="text-center pt-16 font-small why-sm grey-text">
+          Ten12 provides the right platform for sellers to promote their brand
+          and store online, allowing them to have personalized interaction with
+          potential buyers.
+        </p>
+      </div>
+      <div class="row diagonal-content page-pad pt-96">
+        <div class="col-md-4">
+          <div
+            class="choose d-flex pt-46 text-right"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="">
+              <h6 class="">Market Coverage</h6>
+              <p class="font-small grey-text">
+                Because at Ten12 we understand your need to reach a broader
+                consumer base and make
+              </p>
+            </div>
+            <img
+              class="p-14 choose-icon ml-14"
+              src="../../assets/images/market-coverage.svg"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              alt=""
+            />
+          </div>
+          <div class="choose d-flex pt-96 text-right">
+            <div class="">
+              <h6 class="" data-aos="fade-up" data-aos-delay="100">
+                Trade experience
+              </h6>
+              <p
+                class="font-small grey-text"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Kaiglo provides a user experience that allows even your most
+                loyal customers to still keep in touch and purchase from you
+                anywhere they are in Nigeria.
+              </p>
+            </div>
+            <img
+              class="p-14 choose-icon ml-14"
+              src="../../assets/images/Trade-experience.svg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+          </div>
+          <div class="choose d-flex pt-96 text-right">
+            <div class="">
+              <h6 class="" data-aos="fade-up" data-aos-delay="100">
+                Easy of transaction
+              </h6>
+              <p
+                class="font-small grey-text"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                On Ten12, mobile payment is made easy, fast and efficient.
+              </p>
+            </div>
+            <img
+              class="p-14 choose-icon ml-14"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              src="../../assets/images/easy-of-transaction.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            class="img-fluid mt-sm-26"
+            src="../../assets/images/mobile-home.png"
+            alt=""
+            srcset=""
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
+        </div>
+        <div class="col-md-4">
+          <div class="choose d-flex pt-46">
+            <img
+              class="p-14 choose-icon mr-14"
+              src="../../assets/images/brand-rec.svg"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              alt=""
+            />
+            <div class="">
+              <h6 class="" data-aos="fade-up" data-aos-delay="100">
+                Brand recognition
+              </h6>
+              <p
+                class="font-small grey-text"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Do you yearn for a platform where your brand image can be
+                improved and recognized?
+              </p>
+            </div>
+          </div>
+          <div class="choose d-flex pt-96">
+            <img
+              class="p-14 choose-icon mr-14"
+              src="../../assets/images/market-insight.svg"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              alt=""
+            />
+            <div class="">
+              <h6 class="" data-aos="fade-up" data-aos-delay="100">
+                Market insight
+              </h6>
+              <p
+                class="font-small grey-text"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Kaiglo ensures that you can monitor your sales annually to know
+                if you are excelling at a particular trade or whether it would
+                be profitable to move to another line of business. This is made
+                possible through our market insights.
+              </p>
+            </div>
+          </div>
+          <div class="choose d-flex pt-96">
+            <img
+              class="p-14 choose-icon mr-14"
+              src="../../assets/images/efficiency.svg"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              alt=""
+            />
+            <div class="">
+              <h6 class="" data-aos="fade-up" data-aos-delay="100">
+                Efficiency & trustworthy
+              </h6>
+              <p
+                class="font-small grey-text"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Issue of quality and efficient service delivery is our watch
+                word atTen12.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stories pt-128 page-pad pb-128 mx-12 mx-lg-0">
+      <div class="text-center pb-72">
+        <h5 class="section-title">Successful stories</h5>
+      </div>
+      <div class="story-card row">
+        <div class="col-md-4 no-padding story-sm-card text-sm-center">
+          <img
+            class="my-48 ml-lg-96 seller"
+            src="../../assets/images/seller-obinnapro.png"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
+        </div>
+        <div class="col-md-8 no-padding pl-sm-12">
+          <div class="store-badge mt-lg-48 mt-28 text-white px-10 py-6">
+            Store Owner
+          </div>
+          <div>
+            <h4 class="my-story" data-aos="fade-up" data-aos-delay="100">
+              My Story
+            </h4>
+          </div>
+          <div class="mw-500 pt-4 font-small">
+            <p class="testimony" data-aos="fade-up" data-aos-delay="100">
+              Ever since I joined Ten12, I have experienced improved sales due
+              to their market insight data.
             </p>
-            <div class="d_none_desktop pt-80">
-                <button class="btn-seller px-60 py-12 text-white">
-        Become a Seller
-       </button>
-            </div>
+            <br />
+          </div>
+          <div class="">
+            <h6>ObinnaPro</h6>
+            <p class="ceo">CEO (Dope AF Inc)</p>
+          </div>
+          <div class="d-flex pt-6">
+            <div class="dot mr-8"></div>
+            <div class="dot mr-8"></div>
+            <div class="dot mr-8 active"></div>
+            <div class="dot mr-8"></div>
+            <div class="dot mr-8"></div>
+          </div>
+          <div class="">
+            <img
+              class="float-right pb-28 pr-28"
+              src="../../assets/images/bxs-right-arrow-circle.svg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+          </div>
         </div>
+      </div>
     </div>
-    <div class="">
-        <img class="circle" src="../../assets/icons/circle-artifacts.svg" alt="">
-        <div class="page-pad pb-128 pt-lg-128">
-            <h2 class="text-center pb-24 section-title">How it works</h2>
-            <div class="works text-center ml-auto mr-auto">
-                <p class="text-center font-small">Become a member on the Ten12 platform by creating an account either using your social media account or email account. Proceed to create store and begin upload of store details, then await your dashboard where items can be uploaded and
-                    all inventory managed.</p>
+    <footer class="di-sm-none w-100 bg-white">
+      <div class="page-pad">
+        <div class="d-flex more-info pt-60 pb-60">
+          <div class="">
+            <h6 class="footer-title pb-20">Company Information</h6>
+            <p class="font-small pb-8">Contact Us</p>
+            <p class="font-small pb-8">Job Opportunities</p>
+            <p class="font-small pb-8">Why Choose Kaiglo</p>
+            <p class="font-small pb-8">Terms and Conditions</p>
+            <p class="font-small pb-8">Privacy Policy</p>
+            <p class="font-small pb-8">About Us</p>
+          </div>
+          <div class="">
+            <h6 class="footer-title pb-20">Customer Service</h6>
+            <p class="font-small pb-8">Shipping & Delivery</p>
+            <p class="font-small pb-8">Kaiglo Express</p>
+            <p class="font-small pb-8">Return Policy</p>
+            <p class="font-small pb-8">FAQ & Support</p>
+            <p class="font-small pb-8">Top Searches</p>
+            <p class="font-small pb-8">Authentic Items</p>
+            <p class="font-small pb-8">Sitemap</p>
+          </div>
+          <div class="">
+            <h6
+              class="footer-title pb-20"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Kaiglo Social
+            </h6>
+            <div class="d-flex">
+              <img src="../../assets/icons/facebook.svg" alt="" />
+              <img src="../../assets/icons/twiter.svg" alt="" />
+              <img src="../../assets/icons/instagram.svg" alt="" />
+              <img src="../../assets/icons/telegram.svg" alt="" />
             </div>
-            <div class="row pt-48">
-                <img class="ring" src="../../assets/images/ring-artifacts.svg" alt="">
-
-                <div class="tCard text-center px-52 col-md-auto mr-lg-30 mr-md-16 mb-sm-30 ml-auto mr-auto">
-                    <img class="card-image pt-52" src="../../assets/images/become_member.svg" alt="" srcset="">
-                    <h5 class="text-center pt-32">Become a member</h5>
-                    <p class="text-center pt-14 font-small grey-text">Sign up for free on Ten12 and register an account using an email address.</p>
-                </div>
-                <div class="tCard text-center px-52 col-md-auto mr-lg-30 mr-md-16 mb-sm-30 ml-auto mr-auto">
-                    <img class="card-image pt-52" src="../../assets/images/verify_acc.svg" alt="" srcset="">
-                    <h5 class="text-center pt-32">Upload product</h5>
-                    <p class="text-center pt-14 font-small grey-text">verification link to your email address. Click on the link to confirm registration.</p>
-                </div>
-                <div class="tCard text-center px-52 col-md-auto mb-sm-30 ml-auto mr-auto">
-                    <img class="card-image pt-52" src="../../assets/images/start-selling.svg" alt="" srcset="">
-                    <h5 class="text-center pt-32">Start Selling</h5>
-                    <p class="text-center pt-14 font-small grey-text">Go straight to your dashboard, click on add item, follow the prompt and view all products</p>
-                </div>
-                <img class="line di-sm-none" src="../../assets/images/swirle-libe.svg" alt="">
+            <div class="d-flex">
+              <img src="../../assets/icons/messenger.svg" alt="" />
+              <img src="../../assets/icons/youtube.svg" alt="" />
+              <img src="../../assets/icons/pinterest.svg" alt="" />
             </div>
+          </div>
+          <div class="">
+            <h6 class="footer-title pb-20">Make money with us</h6>
+            <p class="font-small pb-8">Sell on Kaiglo</p>
+            <p class="font-small pb-8">Become an Affiliate Partner</p>
+          </div>
+          <div class="">
+            <img
+              class="mr-12"
+              src="../../assets/images/google@.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+            <img
+              class=""
+              src="../../assets/images/apple@.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+          </div>
         </div>
-
-        <div class="diagonal-box">
-            <div class="diagonal-content page-margin pt-128 text-center why-choose ml-auto mr-auto">
-                <h5 class="text-center section-title">Why choose Ten12</h5>
-                <p class="text-center pt-16 font-small why-sm grey-text">
-                    Ten12 provides the right platform for sellers to promote their brand and store online, allowing them to have personalized interaction with potential buyers.
-                </p>
-            </div>
-            <div class="row diagonal-content page-pad pt-96">
-                <div class="col-md-4">
-                    <div class="choose d-flex pt-46 text-right">
-                        <div class="">
-                            <h6 class="">Market Coverage</h6>
-                            <p class="font-small grey-text">Because at Ten12 we understand your need to reach a broader consumer base and make</p>
-                        </div>
-                        <img class="p-14 choose-icon ml-14" src="../../assets/images/market-coverage.svg" alt="">
-                    </div>
-                    <div class="choose d-flex pt-96 text-right">
-                        <div class="">
-                            <h6 class="">Trade experience</h6>
-                            <p class="font-small grey-text">Kaiglo provides a user experience that allows even your most loyal customers to still keep in touch and purchase from you anywhere they are in Nigeria.</p>
-                        </div>
-                        <img class="p-14 choose-icon ml-14" src="../../assets/images/Trade-experience.svg" alt="">
-                    </div>
-                    <div class="choose d-flex pt-96 text-right">
-                        <div class="">
-                            <h6 class="">Easy of transaction</h6>
-                            <p class="font-small grey-text">On Ten12, mobile payment is made easy, fast and efficient.</p>
-                        </div>
-                        <img class="p-14 choose-icon ml-14" src="../../assets/images/easy-of-transaction.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img class="img-fluid mt-sm-26" src="../../assets/images/mobile-home.png" alt="" srcset="">
-                </div>
-                <div class="col-md-4">
-                    <div class="choose d-flex pt-46">
-                        <img class="p-14 choose-icon mr-14" src="../../assets/images/brand-rec.svg" alt="">
-                        <div class="">
-                            <h6 class="">Brand recognition</h6>
-                            <p class="font-small grey-text">Do you yearn for a platform where your brand image can be improved and recognized?</p>
-                        </div>
-                    </div>
-                    <div class="choose d-flex pt-96">
-                        <img class="p-14 choose-icon mr-14" src="../../assets/images/market-insight.svg" alt="">
-                        <div class="">
-                            <h6 class="">Market insight</h6>
-                            <p class="font-small grey-text">Kaiglo ensures that you can monitor your sales annually to know if you are excelling at a particular trade or whether it would be profitable to move to another line of business. This is made possible through our market insights.</p>
-                        </div>
-                    </div>
-                    <div class="choose d-flex pt-96">
-                        <img class="p-14 choose-icon mr-14" src="../../assets/images/efficiency.svg" alt="">
-                        <div class="">
-                            <h6 class="">Efficiency & trustworthy</h6>
-                            <p class="font-small grey-text">Issue of quality and efficient service delivery is our watch word atTen12.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="stories pt-128 page-pad pb-128 mx-12 mx-lg-0">
-            <div class="text-center pb-72">
-                <h5 class="section-title">Successful stories</h5>
-            </div>
-            <div class="story-card row">
-                <div class="col-md-4 no-padding story-sm-card text-sm-center">
-                    <img class="my-48 ml-lg-96 seller" src="../../assets/images/seller-obinnapro.png" alt="">
-                </div>
-                <div class="col-md-8 no-padding pl-sm-12">
-                    <div class="store-badge mt-lg-48 mt-28 text-white px-10 py-6">
-                        Store Owner
-                    </div>
-                    <div>
-                        <h4 class="my-story">My Story</h4>
-                    </div>
-                    <div class="mw-500 pt-4 font-small">
-                        <p class="testimony">Ever since I joined Ten12, I have experienced improved sales due to their market insight data.</p>
-                        <br>
-                    </div>
-                    <div class="">
-                        <h6>ObinnaPro</h6>
-                        <p class="ceo">CEO (Dope AF Inc)</p>
-                    </div>
-                    <div class="d-flex pt-6">
-                        <div class="dot mr-8"></div>
-                        <div class="dot mr-8"></div>
-                        <div class="dot mr-8 active"></div>
-                        <div class="dot mr-8"></div>
-                        <div class="dot mr-8"></div>
-                    </div>
-                    <div class="">
-                        <img class="float-right pb-28 pr-28" src="../../assets/images/bxs-right-arrow-circle.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <footer class="di-sm-none w-100 bg-white">
-            <div class="page-pad">
-                <div class="d-flex more-info pt-60 pb-60">
-                    <div class="">
-                        <h6 class="footer-title pb-20">Company Information</h6>
-                        <p class="font-small pb-8">Contact Us </p>
-                        <p class="font-small pb-8">Job Opportunities</p>
-                        <p class="font-small pb-8"> Why Choose Kaiglo</p>
-                        <p class="font-small pb-8">Terms and Conditions</p>
-                        <p class="font-small pb-8"> Privacy Policy</p>
-                        <p class="font-small pb-8">About Us</p>
-                    </div>
-                    <div class="">
-                        <h6 class="footer-title pb-20">Customer Service</h6>
-                        <p class="font-small pb-8"> Shipping & Delivery </p>
-                        <p class="font-small pb-8">Kaiglo Express </p>
-                        <p class="font-small pb-8"> Return Policy</p>
-                        <p class="font-small pb-8"> FAQ & Support </p>
-                        <p class="font-small pb-8"> Top Searches</p>
-                        <p class="font-small pb-8"> Authentic Items</p>
-                        <p class="font-small pb-8"> Sitemap</p>
-
-                    </div>
-                    <div class="">
-                        <h6 class="footer-title pb-20">Kaiglo Social</h6>
-                        <div class="d-flex">
-                            <img src="../../assets/icons/facebook.svg" alt="">
-                            <img src="../../assets/icons/twiter.svg" alt="">
-                            <img src="../../assets/icons/instagram.svg" alt="">
-                            <img src="../../assets/icons/telegram.svg" alt="">
-                        </div>
-                        <div class="d-flex">
-                            <img src="../../assets/icons/messenger.svg" alt="">
-                            <img src="../../assets/icons/youtube.svg" alt="">
-                            <img src="../../assets/icons/pinterest.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="">
-                        <h6 class="footer-title pb-20">Make money with us</h6>
-                        <p class="font-small pb-8"> Sell on Kaiglo </p>
-                        <p class="font-small pb-8"> Become an Affiliate Partner</p>
-
-                    </div>
-                    <div class="">
-                        <img class="mr-12" src="../../assets/images/google@.png" alt="">
-                        <img class="" src="../../assets/images/apple@.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 text-center pt-14 pb-14 copy-right">
-                <p>Copyright © 2020 KAIGLO STORES LIMITED. All Rights Reserved. User Agreement, <span class="cookie">Privacy and Cookies</span></p>
-            </div>
-        </footer>
-    </div>
+      </div>
+      <div class="w-100 text-center pt-14 pb-14 copy-right">
+        <p>
+          Copyright © 2020 KAIGLO STORES LIMITED. All Rights Reserved. User
+          Agreement, <span class="cookie">Privacy and Cookies</span>
+        </p>
+      </div>
+    </footer>
+  </div>
 </div>

@@ -6,12 +6,15 @@ import { Ten12Component } from './ten12/ten12.component';
 const routes: Routes = [
   {
     path: '',
-    component: Ten12Component
+    component: Ten12Component,
+    data: {
+      title: 'SellerHub | Home'
+    }
   },
   {
     path: 'dashboard',
     data: {
-      title: 'Dashboard | Hub',
+      title: 'SellerHub | Dashboard',
     },
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
@@ -20,6 +23,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-exports: [RouterModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

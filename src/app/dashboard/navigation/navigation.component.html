@@ -1,11 +1,12 @@
 <div class="overlay" *ngIf="mobile_menu"></div>
 
-
 <div class="sidebar" [ngClass]="{ motion_in: mobile_menu }" #sidebar>
   <div class="sidebar__logo text-center">
     <img src="../../../assets/images/store-profile.png" alt="" />
     <p>Saint Morris & Sons hoodlums Store</p>
-    <button class="btn rounded bg_app_primary text-white">Visit Store</button>
+    <button class="btn rounded bg_app_primary text-white" [routerLink]="['/']">
+      Visit Store
+    </button>
   </div>
   <div class="sidebar__menu">
     <li class="text-right w-100 mobile"></li>
@@ -21,8 +22,7 @@
       <span *ngIf="item.path === 'product'" class="add-icon">+</span>
     </li>
 
-    <li class="font_14 d-flex align-items-center ">
-      
+    <li class="font_14 d-flex align-items-center">
       <span class="logout-span">Logout</span>
     </li>
     <!-- <span>Logout</span> -->
@@ -36,12 +36,10 @@
         <mat-icon class="" (click)="toggleMenu()">menu</mat-icon>
         <h6 class="weight_600 text_app_secondary mb-0 header-title">
           Welcome to SellersHub
-          
         </h6>
-        
       </div>
       <div>
-        <img src="../../../assets/images/notification.svg">
+        <img src="../../../assets/images/notification.svg" />
       </div>
     </div>
   </div>
