@@ -1,0 +1,271 @@
+@import '../variables.scss';
+.color-disabled {
+    color: $grey3;
+}
+
+.itg-background-green-gradient {
+    background: $green-gradient;
+}
+
+.color-white-page {
+    background: $white;
+}
+
+.color-transparent-page {
+    background: transparent;
+}
+
+.color-itg-radio-chip {
+    background: var(--color-itg-grey-medium-2);
+    border-color: var(--app-chip-border-color);
+}
+
+.color-itg-radio-chip-active {
+    background: var(--app-green-color);
+    border-color: var(--app-green-colo);
+}
+
+.color-itg-medium {
+    color: var(--color-itg-medium);
+}
+
+.color-itg-disabled-icon {
+    background-color: $light-grey-2;
+}
+
+.color-dark-green-b {
+    color: var(--color-dark-green-b);
+}
+
+.color-white-dark-green-b-bg {
+    --color-tint: var(--color-dark-green-b-tint);
+    background: $dark-green-b;
+}
+
+.color-white-danger-bg {
+    background: $danger;
+}
+
+.color-white-red-bg {
+    background: $red;
+}
+
+.color-white-light-green-2-bg {
+    background: $light-green-2;
+}
+
+.color-medium-green-page {
+    background: #e5f2ec;
+}
+
+.color-dark-green {
+    color: $dark-green !important;
+}
+
+.color-green {
+    color: $green !important;
+    --color: $green !important;
+}
+
+.color-secondary-grey {
+    color: $secondary-grey !important;
+}
+
+.color-secondary-grey {
+    color: $secondary-grey;
+}
+
+.color-tertiary-grey {
+    color: $grey3 !important;
+}
+
+.color-white {
+    color: $white;
+    --color: var(--app-color-white);
+}
+
+.text-color {
+    color: var(--app-text-color);
+    --color: var(--app-text-color);
+}
+
+.color-light-red {
+    color: $light-red;
+}
+
+.color-red {
+    --color: var(--app-red-color);
+    color: $red !important;
+}
+
+.color-disabled {
+    color: $grey3;
+}
+
+.disabled-bg {
+    background-color: $medium-grey-2;
+    --background: $medium-grey-2;
+}
+
+.color-grey-6 {
+    color: $grey-6;
+}
+
+.bg-danger {
+    background-color: $danger;
+}
+
+.bg-warning {
+    background-color: $warning;
+    --background: $warning;
+}
+
+.bg-white {
+    background-color: $white;
+    --background: var(--app-color-white);
+}
+
+.color-secondary-blue {
+    color: $secondary-blue;
+}
+
+.bg-red {
+    background-color: $light-red;
+}
+
+.bg-red-dark {
+    background-color: $red;
+}
+
+.bg-green {
+    background-color: $green;
+    --background: $green;
+}
+
+.bg-dark-green {
+    background-color: $dark-green;
+    --background: $dark-green;
+}
+
+.bg-green-08 {
+    background-color: rgba($green, 0.8);
+}
+
+.bg-white {
+    background-color: $white;
+    --background: #fff;
+}
+
+.bg-grey-medium {
+    --background: var(--color-itg-grey-medium-2);
+    --item-background: var(--color-itg-grey-medium-2);
+    --background-color: var(--color-itg-grey-medium-2);
+    background-color: $light-grey-2 !important;
+}
+
+.bg-light-green-2 {
+    background-color: $light-green-2;
+    --background: $light-green-2;
+}
+
+.bg-light-green {
+    background-color: $light-green;
+    --background: var(--app-light-green-color);
+}
+
+.bg-dark-green-b {
+    background-color: $dark-green-b;
+    --background: var(--app-dark-green-b-color);
+}
+
+.bg-white-layer-gradient {
+    background: $white-layer-gradient;
+}
+
+.alt-bg {
+    background: $alt-bg;
+    --background: $alt-bg;
+}
+
+.bg-deep-blue {
+    background-color: $deep-blue;
+}
+
+.bg-light-blue {
+    background-color: $light-blue;
+}
+
+.bg-secondary-blue {
+    background: $secondary-blue;
+}
+
+.bg-secondary-grey {
+    background: $secondary-grey;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-dark {
+    background-color: $bg-dark;
+}
+
+.bg-light-gray {
+    background-color: $light-grey-2;
+    --background: $light-grey-2;
+}
+
+.bg-light-green-5 {
+    background-color: $light-green-5;
+    --background: var(--light-green-5);
+}
+
+.bg-light-green-faded {
+    background-color: $light-green-5;
+    --background: var(--light-green-5);
+}
+
+.bg-ultra-light-green {
+    background: $ultra-light-green;
+}
+
+.bg-dark-green {
+    background: $dark-green;
+    --background: var(--app-dark-green);
+}
+
+.bg-yellow-2 {
+    background: $yellow-2;
+}
+
+.bg-default {
+    background-color: $alt-bg;
+    --background: $alt-bg;
+}
+
+.bg-inherit {
+    --background: inherit;
+    background-color: inherit;
+}
+
+.bg-grey-2 {
+    background-color: $light-grey-2;
+    --background: $light-grey-2;
+}
+
+.bg-red {
+    background-color: $red;
+    --background: $red;
+}
+
+.color-grey-3 {
+    color: $grey3;
+    --color: var(--app-grey-3);
+}
+
+@media (min-width: $desktop-width) {
+    .color-lg-dark-green {
+        color: $dark-green !important;
+    }
+}

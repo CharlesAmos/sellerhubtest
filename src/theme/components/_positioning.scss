@@ -1,0 +1,77 @@
+@import '../variables';
+@import '../mixins/mixins';
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.absolute-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.left-8-perc {
+    left: 8%;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.top-20-perc {
+    top: 20%;
+}
+
+.top-230 {
+    top: rem(230);
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.right-1 {
+    right: 1;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+@media (min-width: $desktop-width) {
+    .float-lg-left {
+        float: left !important;
+    }
+    .float-lg-right {
+        float: right !important;
+    }
+}

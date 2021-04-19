@@ -1,0 +1,107 @@
+@import "../variables";
+@import "../mixins/mixins";
+card {
+    --color: var(--color);
+    --item-background: var(--app-white-color);
+    border-radius: rem(8);
+    box-shadow: $box-shadow-1;
+    line-height: rem(22);
+    &.no-shadow {
+        box-shadow: none;
+    }
+    &.shadow-page-item {
+        box-shadow: $box-shadow-3;
+    }
+    &.flex {
+        &.is-link::part(native) {
+            display: flex;
+        }
+    }
+    &.flex-column {
+        &.is-link::part(native) {
+            flex: 1;
+            flex-direction: column;
+        }
+    }
+    &.white-overlay-gradient {
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background: $white-layer-gradient;
+            border-radius: rem(8);
+        }
+        >* {
+            z-index: 2;
+            &.main-icon {
+                z-index: 0;
+            }
+        }
+    }
+    &.light-green-gradient {
+        background: $green-gradient-45;
+        background-color: $light-green-2;
+        .main-icon {
+            opacity: 0.45;
+        }
+    }
+    &.dark-green-gradient {
+        background: $green-gradient-45, $green-gradient;
+        .main-icon {
+            opacity: 0.45;
+        }
+    }
+    &.exclusion-card {
+        position: absolute;
+        overflow: visible;
+        opacity: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: all 0.5s ease;
+        pointer-events: none;
+        transform-origin: top center;
+        will-change: transform, opacity, width, box-shadow;
+        box-shadow: none;
+        opacity: 0;
+        transform: scaleX(0.9);
+        box-shadow: $box-shadow-1;
+        &.active {
+            box-shadow: $alert-shadow-1;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: relative;
+            transform: scaleX(1);
+            opacity: 1;
+            pointer-events: inherit;
+        }
+        &.level-2 {
+            opacity: 1;
+            overflow: hidden;
+            @include transform(scaleX(0.9) translate3D(0, 16px, 0));
+        }
+        &.active-hidden {
+            @include transform(translateY(-32px));
+            opacity: 0;
+        }
+        &.last:not(.active):not(.level-2) {
+            transition: all 0s;
+        }
+    }
+    &.lighter-green-gradient {
+        background: linear-gradient(180deg, #f2f9f5 0%, #e5f2ec 100%);
+    }
+    &.bs-3 {
+        box-shadow: $box-shadow-3;
+    }
+    &.bs-4 {
+        box-shadow: $box-shadow-4;
+    }
+}

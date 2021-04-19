@@ -1,0 +1,135 @@
+@import '../variables.scss';
+@import '../mixins/mixins';
+.radius-50-perc {
+    border-radius: 50%;
+}
+
+.radius-20 {
+    border-radius: rem(20);
+    --border-radius: 20px;
+}
+
+.top-radius-0 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.bottom-radius-0 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.bottom-radius-40 {
+    border-bottom-left-radius: rem(40);
+    border-bottom-right-radius: rem(40);
+}
+
+.bottom-radius-24 {
+    border-bottom-left-radius: rem(24);
+    border-bottom-right-radius: rem(24);
+}
+
+.bottom-radius-44 {
+    border-bottom-left-radius: rem(44);
+    border-bottom-right-radius: rem(44);
+}
+
+.bottom-left-radius-8 {
+    border-bottom-left-radius: rem(8);
+}
+
+.bottom-radius-36 {
+    border-bottom-left-radius: rem(36);
+    border-bottom-right-radius: rem(36);
+}
+
+.top-radius-4 {
+    border-top-left-radius: rem(8);
+    border-top-right-radius: rem(8);
+}
+
+.top-radius-8 {
+    border-top-left-radius: rem(8);
+    border-top-right-radius: rem(8);
+}
+
+.border-radius-8 {
+    border-radius: rem(8);
+}
+
+.border-radius-12 {
+    border-radius: rem(12);
+}
+
+.border-radius-4 {
+    border-radius: rem(4);
+}
+
+.bottom-radius-8 {
+    border-bottom-left-radius: rem(8);
+    border-bottom-right-radius: rem(8);
+}
+
+.bottom-1px-solid {
+    border-bottom: 1px solid $medium-grey-2 !important;
+}
+
+.border-2px-solid {
+    border: 2px solid $white !important;
+}
+
+.border-medium-green-3 {
+    border-color: $medium-green-3 !important;
+}
+
+.border-medium-green-item {
+    --border-color: #BFE2D0 !important;
+}
+
+.border-medium-green-3 {
+    border-color: $medium-green-3;
+}
+
+.border-light-green {
+    border-color: $light-green !important;
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid;
+}
+
+.border-bottom-2 {
+    border-bottom: rem(2) solid;
+}
+
+.border-top-1 {
+    border-top: 1px solid;
+}
+
+.border-gray {
+    border-color: $medium-grey-2;
+}
+
+.border-red {
+    border-color: $red;
+}
+
+.radius-0 {
+    --border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.border-1px-left {
+    border-left: 1px solid #bfe2d0 !important;
+}
+
+@media (min-width: $desktop-width) {
+    .radius-lg-0 {
+        --border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+    .radius-lg-8 {
+        border-bottom-left-radius: rem(8);
+        border-bottom-right-radius: rem(8);
+    }
+}

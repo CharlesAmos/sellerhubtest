@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+@function font($key) {
+  @return map-get($fontScheme, $key);
+}
+
+@function color($key) {
+  @return map-get($colorScheme, $key);
+}
+
+@function weight($key) {
+  @return map-get($weightScheme, $key);
+}
+
+@function border($key) {
+  @return map-get($borderScheme, $key);
+}
+
+@function breakpoint($key) {
+  @return map-get($breakpoints, $key);
+}

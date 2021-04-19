@@ -1,0 +1,130 @@
+@import '../variables.scss';
+@import '../mixins/mixins';
+.itg {
+    input {
+        --placeholder-color: var(--app-input-placeholder-color);
+        --placeholder-opacity: 1;
+        --border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        input,
+        input.native-input {
+            @extend .text-normal;
+            --border-radius: 4px 4px 0 0;
+            --background: var(--app-input-bg);
+            background: var(--app-input-bg);
+            --padding-start: 8px;
+            --padding-end: 8px;
+            --padding-bottom: 8px;
+            --padding-top: 9px;
+            --highlight-height: 1px;
+            &:-webkit-autofill {
+                background: var(--background) !important;
+                background-color: var(--background) !important;
+            }
+        }
+        &.bg-white {
+            input,
+            input.native-input {
+                --background: var(--app-color-white);
+                background: var(--app-color-white);
+            }
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        input[type='number'] {
+            -moz-appearance: textfield;
+        }
+        .input-clear-icon {
+            position: absolute;
+            height: rem(14);
+            width: rem(14);
+            right: 0;
+            margin-right: 15px;
+        }
+        &.has-spinners {
+            input,
+            input.native-input {
+                --padding-start: 46px;
+                --padding-end: 46px;
+            }
+        }
+    }
+    .input-label {
+        --color: var(--app-text-color);
+        color: var(--color);
+    }
+    .input-label-2 {
+        --color: var(--color);
+        color: var(--color);
+    }
+    .disabled-input-ph {
+        --background: var(--color-disabled) !important;
+        background: $medium-grey-2;
+        --placeholder-opacity: 1;
+        --placeholder-color: var(--app-input-label-color);
+        --app-input-placeholder-color: var(--app-input-label-color);
+        --color: var(--app-input-label-color);
+        color: $medium-grey-4;
+        opacity: 1;
+        -webkit-opacity: 1;
+        -webkit-text-fill-color: $medium-grey-4;
+    }
+    .input-spinner {
+        z-index: 2;
+    }
+    .radio-btn {
+        --border-radius: 20px;
+        --color-checked: var(--color-success);
+        --inner-border-radius: 16px;
+    }
+    .check-btn {
+        --border-radius: 20px;
+        --checkmark-color: var(--app-color-white);
+        --border-color: var(--color-success);
+        --border-color-checked: var(--color-success);
+        --background-checked: var(--color-success);
+        --border-radius: 0px;
+    }
+    .disabled-check-btn {
+        --border-radius: 20px;
+        --border-color: $light-grey-2;
+        --border-radius: 0px;
+    }
+}
+
+.checkbox {
+    --size: 20px !important; //Size of the checkbox icon
+}
+
+toggle {
+    width: rem(40);
+    height: rem(24);
+    --background: var(--color-medium);
+    --background-checked: var(--color-success);
+    --handle-background: #fff url('/assets/custom-icons/sm-toggle-off.svg') no-repeat 100% / 100%;
+    --handle-background-checked: #fff url('/assets/custom-icons/sm-toggle-icon.svg') no-repeat 100% / 100%;
+    --handle-width: 16px;
+    --handle-height: 16px;
+    --handle-spacing: 4px;
+    &.toggle-checked {
+        color: $green;
+    }
+}
+
+radio-input {
+    &.opacity-0 {
+        .radio-icon,
+        .radio-inner {
+            display: none;
+        }
+    }
+}
+
+checkbox {
+    z-index: auto;
+}
